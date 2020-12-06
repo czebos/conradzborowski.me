@@ -12,6 +12,8 @@ import Project1 from './projects/Project1'
 import Project2 from './projects/Project2'
 import Project3 from './projects/Project3'
 import Project4 from './projects/Project4'
+import Project5 from './projects/Project5'
+import Project6 from './projects/Project6'
 
 import { Link as SmoothLink, animateScroll as scroll } from "react-scroll";
 
@@ -19,7 +21,7 @@ import { SocialIcon } from 'react-social-icons';
 
 
 
-const texts = ["I'm Conrad Zborowski.", "I'm a UI/UX Developer."]
+const texts = ["I'm Conrad Zborowski.", "I'm a Developer."]
 
 
 function App() {
@@ -36,6 +38,12 @@ function App() {
             <Route path="/project4">
                 <Project4 />
             </Route>
+            <Route path="/project5">
+                <Project5 />
+            </Route>
+            <Route path="/project6">
+                <Project6 />
+            </Route>
             <Route path="/project1">
                 <Project1 />
             </Route>
@@ -50,45 +58,81 @@ function App() {
                                 <div className='home-icon' href="#home">CZ</div>
                                 <Nav className="right">
                                     <SmoothLink className='navbar-other' smooth={true} activeClass="active" to="projects">Projects</SmoothLink>
+                                    <SmoothLink className='navbar-other' smooth={true} activeClass="active" to="pictures">Pictures</SmoothLink>
                                     <SmoothLink className='navbar-other' smooth={true} activeClass="active" to="contact">Contact</SmoothLink>
                                     <Nav.Link href={Pdf}>Resume</Nav.Link>
                                 </Nav>
                             </Navbar>
                             <CypherText className='movingtext' placeholders="_" delay={2000} textList={texts} />
                             <Cpu className='cpu' />
-                            <p className="para">I am a Software Developer and UI/UX engineer based in Chicago.</p>
-                            <p className="smaller-para">UI/UX Projects</p>
-                            <SmoothLink className='navbar-other' smooth={true} activeClass="active" to="projects"><ArrowDown/></SmoothLink>
+                            <p className="para">I'm a Software Engineer based in Chicago.</p>
+                            <p className="smaller-para">Internships and Projects</p>
+                            <SmoothLink className='navbar-other' smooth={true} activeClass="active" to="projects"><ArrowDown size='40px'/></SmoothLink>
                             <div id="projects" className="collection">
                                 <Link to='/project1' className='project cancel'>
                                     <div className='textContainer'>
-                                        <div className='toptext'>Super Smash Filter</div>
-                                        <div className='bottomtext'>Desiging and Implementing a React App</div>
+                                        <div className='toptext'>Google Ads Internship</div>
+                                        <div className='bottomtext'>Caching intermediate steps of integration testing</div>
+                                    </div>
+                                </Link>
+
+                                <Link to='/project5' className='project5 cancel'>
+                                    <div className='textContainer'>
+                                        <div className='toptext'>Google Cloud Internship</div>
+                                        <div className='bottomtext'>Pipeling testing data to produce coverage reports</div>
+                                    </div>
+                                </Link>
+
+                                <Link to='/project4' className='project4 cancel'>
+                                    <div className='textContainer'>
+                                        <div className='toptext'>Kalman Filter</div>
+                                        <div className='bottomtext'>Predicting Monkeys Hand Movement via Deep Learning</div>
+                                    </div>
+                                </Link>
+
+                                <Link to='/project3' className='project3 cancel'>
+                                    <div className='textContainer'>
+                                        <div className='toptext'>PiButtlerfly Implementation </div>
+                                        <div className='bottomtext'>Researching/Implementing a security algorithm</div>
                                     </div>
                                 </Link>
 
                                 <Link to='/project2' className='project2 cancel'>
                                     <div className='textContainer'>
-                                        <div className='toptext'>Mike's Calzones Updated</div>
-                                        <div className='bottomtext'>Prototyping and Redesigning a Website</div>
+                                        <div className='toptext'>CrossPlay</div>
+                                        <div className='bottomtext'>Chess-based game + Monte Carlo AI</div>
                                     </div>
                                 </Link>
-                                <Link to='/project3' className='project3 cancel'>
+                            
+                                <Link to='/project6' className='project6 cancel'>
                                     <div className='textContainer'>
-                                        <div className='toptext'>Stratum.ai R&D</div>
-                                        <div className='bottomtext'>Iteratively improving a Startup's interface</div>
-                                    </div>
-                                </Link>
-                                <Link to='/project4' className='project4 cancel'>
-                                    <div className='textContainer'>
-                                        <div className='toptext'>Cacti Shopping Preference</div>
-                                        <div className='bottomtext'>A/B Testing on Cactus shopping</div>
+                                        <div className='toptext'>multipl.io</div>
+                                        <div className='bottomtext'>Multiplater online web game</div>
                                     </div>
                                 </Link>
                             
                             </div>
+                            <div className='pictures'>
+                            <div className="title-contact"> Pictures</div>
+                            <SmoothLink className='navbar-other' smooth={true} activeClass="active" to="pictures"><ArrowDown size='40px'/></SmoothLink>
+                            <div id="pictures" className="collection2">
+                                <div to='/project4' className='img1 cancel'>
+                                </div>
+                                <div to='/project4' className='img2 cancel'>
+                                </div>
+                                <div to='/project4' className='img3 cancel'>
+                                </div>
+                                <div to='/project4' className='img4 cancel'>
+                                </div>
+                                <div to='/project4' className='img5 cancel'>
+                                </div>
+                                <div to='/project4' className='img6 cancel'>
+                                </div>
+                            </div>
+                            </div>
+
                             <div id='contact'>
-                                <div className="title-contact"> Lets get in Contact</div>
+                                <div className="title-contact"> Lets get in Contact!</div>
                                 <div className="social-media">
                                     <SocialIcon className='icon-so' url="https://facebook.com/conrad.zborowski" />
                                     <SocialIcon className='icon-so' url="https://linkedin.com/in/conrad-zborowski/" />
@@ -106,6 +150,7 @@ function App() {
                               </div>
                                     </div>
                                 </div>
+                                <div style={{fontSize:'12px'}}>© COPYRIGHT CONRAD ZBOROWSKI 2021. ALL RIGHTS RESERVED.</div>
                             </div>
 
                         </body>

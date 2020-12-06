@@ -2,49 +2,57 @@ import React from 'react';
 import Pdf from './../conrad_zborowski_resume.pdf' 
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import { ArrowLeft } from 'react-bootstrap-icons';
+import { Arrow90degLeft, Arrow } from 'react-bootstrap-icons';
 
 const project1 = () => {
     return (
         <div>
-            <Navbar className='NavBarYo' variant="dark">
+            <Navbar className='NavBarYo shifted' variant="dark">
                 <div className='home-icon' href="#home">CZ</div>
+                <div className='filler'> </div>
                 <Nav className="right">
-                    <Link className='navbar-other' to="/">Projects</Link>
-                    <Link className='navbar-other' to="/">Contact</Link>
-                    <Nav.Link href={Pdf}>Resume</Nav.Link>
+                    <Link className='navbar-other float' to="/">Back to Home</Link>
+                    <Nav.Link className='' href={Pdf}>Resume</Nav.Link>
                 </Nav>
             </Navbar>
-                <div className='backbar'>
-                    <Link to='/'><Button variant='light' className='back-button'> <ArrowLeft /> Back </Button></Link>
+                <div style={{marginTop:'2vh'}}className='backbar'>
+                    <Link style={{marginLeft:'10vw'}} to='/'> <Arrow90degLeft size='36px'/> </Link>
                 </div>
             <div className='centered'>
-                <div className='project center margin-none no-hover'>
+                <div className='project-2 center margin-none no-hover'>
                     <div className='textContainer'>
-                        <div className='toptext'>Super Smash Filter</div>
-                        <div className='bottomtext'>Desiging and Implementing a React App</div>
+                        <div className='toptext2'>Google Ads Internship</div>
+                        <div className='bottomtext2'>Caching intermediate steps of integration testing</div>
                     </div>
                 </div>
-                <b >I created a React app that implements a list interface. I designed
-                 the architecture and the implmented the details.</b>
+                <div className='divide'>
+                    <b className='value'> Strategies:
+                    <div style={{fontWeight:'normal',fontSize:'16px'}}> Software Engineering, Backend</div>
+                    </b>
+                    <b className='value'> Timeline:
+                    <div style={{fontWeight:'normal',fontSize:'16px'}}> May-Aug 2019</div>
+                    </b>
+                    <b className='value'> GitHub:
+                    <div style={{fontWeight:'normal',fontSize:'16px'}}> N/A</div>
+                    </b>
+                    <b className='value'> Languages:
+                    <div style={{fontWeight:'normal',fontSize:'16px'}}> Python, Bazel</div>
+                    </b>
+                </div>
                 <br></br>
-                <div className='centered-title'> Introduction</div>
-                In this project, I created a simple filtering and sorting system with an aggregator. This means that I had some sort of collection that I could filter and sort by
-              some metric. Then I also needed to be able for the user to interact with the product to aggregate it. In this example I had a user make a team from a list of Super
-              Smash Bro's Melee Characters. <br></br> <br></br>
-                <div className='centered-title'> Goals and Values</div>
-                The value of the application is to allow the user to create a Melee Team with easy selecting and sorting. 
-              The goal of the assignment is to create and app that uses React and, without using libraries, create a sorting,
-              filtering, and aggregation application using good React designed code with states, components and architecture.
-                <br></br>
-                <br></br>
-                <div className='centered-title'> Implementation Details</div>
-                Some design considered was using multiple types of listitem components for both the Team and the list. I also considered
-              seperating the team and the list by parent, and using the root instead. Finally I considered using multiple classes for more
-              modularized code.
+                <div className='app-info'>
+                <div className='centered-title'> Project Description</div>
+                 Over the summer, I was a Software Engineering Intern at Google. I interned in Mountain View
+                 on the Ads team.
+                 <br></br> <br></br>
+                 My project was open-ended and many design docs were created and design choices were considered. I worked on caching intermediate steps in an integration test. This shortened testing time,
+                 by using the cache layer if test runs resulted in the same input and values at any given step
+                 in the integration test.
+                 <br></br> <br></br>
                 <br></br>
                 <br></br>
                 <div className='just-centered'> Interesting in learning more about the project? Contact me at
+                </div>
                 </div>
                 <a className='just-centered' href=" mailto: conrad_zborowski@brown.edu">Conrad_Zborowski@brown.edu</a>
             </div>

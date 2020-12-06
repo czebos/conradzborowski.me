@@ -58,18 +58,97 @@ code {
 
 .collection {
     width: 100vw;
-    padding: 3vw;
+    padding: 10vw;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
 }
 
-.project {
-    width: 41vw;
-    height: 31vw;
-    margin: 3vw;
+.collection2 {
+    width: 100vw;
+    padding: 2vw;
+    margin-bottom:5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.img1 {
+    width: 30vw;
+    height: 20vw;
+    margin: 1vw;
     background-color: blue;
-    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('test.jpg');
+    background-image:url('./imgs/img4.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius:25px;
+}
+
+.img2 {
+    width: 30vw;
+    height: 20vw;
+    margin: 1vw;
+    background-color: blue;
+    background-image:url('./imgs/img5.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius:25px;
+}
+
+.img3 {
+    width: 30vw;
+    height: 20vw;
+    margin: 1vw;
+    background-color: blue;
+    background-image:url('./imgs/img6.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius:25px;
+}
+.img4 {
+    width: 30vw;
+    height: 20vw;
+    margin: 1vw;
+    background-color: blue;
+    background-image:url('./imgs/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius:25px;
+}
+
+.img5 {
+    width: 30vw;
+    height: 20vw;
+    margin: 1vw;
+    background-color: blue;
+    background-image:url('./imgs/img2.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius:25px;
+}
+
+.img6 {
+    width: 30vw;
+    height: 20vw;
+    margin: 1vw;
+    background-color: blue;
+    background-image:url('./imgs/img3.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius:25px;
+}
+
+
+
+
+
+
+.project {
+    width: 36vw;
+    height: 27vw;
+    margin: 2vw;
+    background-color: blue;
+    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('./imgs/google.png');
     background-size: cover;
     background-position: center;
     border-radius:25px;
@@ -80,11 +159,11 @@ code {
 }
 
 .project2 {
-    width: 41vw;
-    height: 31vw;
-    margin: 3vw;
+    width: 36vw;
+    height: 27vw;
+    margin: 2vw;
     background-color: blue;
-    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('test4.jpg');
+    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('./imgs/crossplay.png');
     background-size: cover;
     background-position: center;
     border-radius: 25px;
@@ -96,11 +175,11 @@ code {
 
 
 .project3 {
-    width: 41vw;
-    height: 31vw;
-    margin: 3vw;
+    width: 36vw;
+    height: 27vw;
+    margin: 2vw;
     background-color: blue;
-    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('test3.jpg');
+    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('./imgs/cyber.png');
     background-size: cover;
     background-position: center;
     border-radius: 25px;
@@ -112,11 +191,11 @@ code {
 
 
 .project4 {
-    width: 41vw;
-    height: 31vw;
-    margin: 3vw;
+    width: 36vw;
+    height: 27vw;
+    margin: 2vw;
     background-color: blue;
-    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('test2.jpg');
+    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('./imgs/neural.png');
     background-size: cover;
     background-position: center;
     border-radius: 25px;
@@ -126,6 +205,37 @@ code {
     opacity: .5;
 }
 
+.project5 {
+    width: 36vw;
+    height: 27vw;
+    margin: 2vw;
+    background-color: blue;
+    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('./imgs/cloud.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.project5:hover {
+    opacity: .5;
+}
+
+.project6 {
+    width: 36vw;
+    height: 27vw;
+    margin: 2vw;
+    background-color: blue;
+    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('./imgs/game.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.project6:hover {
+    opacity: .5;
+}
+
+
 
 .textContainer {
     margin-left: 2vw;
@@ -133,7 +243,7 @@ code {
 
 .bottomtext {
     bottom: 1vw;
-    font-size:1.5vw;
+    font-size:1.3vw;
     margin-top:1%;
 }
 
@@ -144,6 +254,14 @@ code {
 
 #contact {
     width: 100vw;
+    background-color: #282c34;
+    vertical-align:middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pictures{
     background-color: #424752;
     vertical-align:middle;
     display: flex;
@@ -168,7 +286,6 @@ code {
 
 .contact-container {
     width: 100vw;
-    background-color: #424752;
     vertical-align: middle;
     display: flex;
     flex-direction: row;
@@ -312,6 +429,118 @@ code {
 
 }
 
+.divide{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100vw;
+    vertical-align: top;
+}
+
+.value {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    width: max(20vw, 150px);
+    text-align: center;
+}
+
+.shifted {
+    margin-inline: auto;
+    width: 100vw;
+}
+
+.app-info {
+    align-items: center;
+    flex-direction: column;
+    display:flex;
+    margin-left:20vw;
+    margin-right:20vw;
+}
+
+
+.project-2 {
+    width: max(36vw, 300px);
+    height: max(27vw, 200px);
+    margin: 2vw;
+    background-color: blue;
+    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('./imgs/google.png');
+    background-size: cover;
+    background-position: center;
+    border-radius:25px;
+}
+
+.bottomtext2 {
+    bottom: 1vw;
+    font-size:max(1.3vw, 12px);
+    margin-top:1%;
+}
+
+.toptext2 {
+    font-size: max(2.5vw, 20px);
+    margin-top: 55%;
+}
+
+.project2-2 {
+    width: max(36vw, 300px);
+    height: max(27vw, 200px);
+    margin: 2vw;
+    background-color: blue;
+    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('./imgs/crossplay.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
 
 
 
+.project3-2 {
+    width: max(36vw, 300px);
+    height: max(27vw, 200px);
+    margin: 2vw;
+    background-color: blue;
+    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('./imgs/cyber.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+
+.project4-2 {
+    width: max(36vw, 300px);
+    height: max(27vw, 200px);
+    margin: 2vw;
+    background-color: blue;
+    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('./imgs/neural.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+
+.project5-2 {
+    width: max(36vw, 300px);
+    height: max(27vw, 200px);
+    margin: 2vw;
+    background-color: blue;
+    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('./imgs/cloud.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+
+.project6-2 {
+    width: max(36vw, 300px);
+    height: max(27vw, 200px);
+    margin: 2vw;
+    background-color: blue;
+    background-image: linear-gradient(rgba(150, 150, 150, 0), rgba(20, 20, 20, .8)), url('./imgs/game.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}

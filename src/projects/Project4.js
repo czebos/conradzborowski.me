@@ -2,62 +2,57 @@ import React from 'react';
 import Pdf from './../conrad_zborowski_resume.pdf' 
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import { ArrowLeft } from 'react-bootstrap-icons';
+import { Arrow90degLeft } from 'react-bootstrap-icons';
 
-const project3 = () => {
+const project4 = () => {
     return (
         <div>
-            <Navbar className='NavBarYo' variant="dark">
+            <Navbar className='NavBarYo shifted' variant="dark">
                 <div className='home-icon' href="#home">CZ</div>
+                <div className='filler'> </div>
                 <Nav className="right">
-                    <Link className='navbar-other' to="/">Projects</Link>
-                    <Link className='navbar-other' to="/">Contact</Link>
-                    <Nav.Link href={Pdf}>Resume</Nav.Link>
+                    <Link className='navbar-other float' to="/">Back to Home</Link>
+                    <Nav.Link className='' href={Pdf}>Resume</Nav.Link>
                 </Nav>
             </Navbar>
-                <div className='backbar'>
-                    <Link to='/'><Button variant='light' className='back-button'> <ArrowLeft /> Back </Button></Link>
+                <div style={{marginTop:'2vh'}}className='backbar'>
+                    <Link style={{marginLeft:'10vw'}} to='/'> <Arrow90degLeft size='36px'/> </Link>
                 </div>
             <div className='centered'>
-                <div className='project4 center margin-none no-hover'>
+                <div className='project4-2 center margin-none no-hover'>
                     <div className='textContainer'>
-                        <div className='toptext'>Stratum.ai R&D</div>
-                        <div className='bottomtext'>Iteratively improving a Startup's interface</div>
+                        <div className='toptext2'>Kalman Filter</div>
+                        <div className='bottomtext2'>Predicting Monkeys Hand Movement via Deep Learning</div>
                     </div>
                 </div>
-                <b>I Alpha/Beta tested a cactus website, and did analysis on the results.</b>
-                <br></br>
-                <div> I made changes to a cacti purchasing website and had two versions.
-                Different users used different versions of the website. I tracked the
-                clicks and time spent on the site via logs. With the results I saw
-                if one version had more time spent or had more clicks, using
-                statistical analysis.
-
+                <div className='divide'>
+                    <b className='value'> Strategies:
+                    <div style={{fontWeight:'normal',fontSize:'16px'}}> Deep Learning, AI</div>
+                    </b>
+                    <b className='value'> Timeline:
+                    <div style={{fontWeight:'normal',fontSize:'16px'}}> Nov-Dec 2019</div>
+                    </b>
+                    <b className='value'> GitHub:
+                    <div style={{fontWeight:'normal',fontSize:'16px'}}> <a href='https://github.com/czebos/MLP-Kalman-Predictor'>MLP-Kalman-Predictor </a></div>
+                    </b>
+                    <b className='value'> Languages:
+                    <div style={{fontWeight:'normal',fontSize:'16px'}}> Python, Tensorflow</div>
+                    </b>
                 </div>
                 <br></br>
-                <div className='centered-title'> Interface Differences</div>
-                <ul>
-                    <li>A has a border around the items</li>
-                    <li>A's text boxes and buttons are oriented horizontally</li>
-                    <li>B's text is bigger</li>
-                    <li>B's button is smaller</li>
-                </ul>
+                <div className='app-info'>
+                <div className='centered-title'> Project Description</div>
+                 Working closely with a Brown Professor in Psychology, I helped in implementing a
+                 model that would use the data the professor prepared.
+                 <br></br> <br></br>
+                 The data was the brain activity vs position of hand in the monkey. Using
+                 multi layer perceptrons and the kalman filter, we used the data to help
+                 predict the potential location of the monkey's hand.
+                 <br></br> <br></br>
                 <br></br>
-
-                <div className='centered-title'> A/B Hypothesis</div>
-                The null hypothesis for time completion is "A and B will have the same time completion." The alternate hypothesis for time completion is "A and B will not have the same time completion." The null hypothesis for return rate is "A and B will have the same return rate." The alternate hypothesis for return rate is "A and B will not have the same return rate."
-                <br></br> <br></br>
-                To collect the data, we created a website that with 50% probablity went to either type A or type B. Then, the user would add catci to its his/her cart and make clicks to do so. These clicks would be logged. With these logs, we would create our data (return rate, time spent on website). The time spent was determined based on the first and last click on the wesbite. Return rate was deterimened by the user reloading the website.
-                <br></br>
-                <br></br>
-
-                <div className='centered-title'> Conclusions</div>
-                <li>A big limitation was that there was not enough data points. With more data points, we would be closer to how users actually behaved</li>
-                <li>Another limitaion was that users were 'faking' the website, not actually using it. The experience would be different if users genuinely used it</li>
-                <li>We did learn that the users would stay slightly longer on the site when the button was smaller, probably implying the time to click the button</li>
-                <li>The easier to parse version (Version A) was stayed on less long, implying parsing time factors into the equation</li>
                 <br></br>
                 <div className='just-centered'> Interesting in learning more about the project? Contact me at
+                </div>
                 </div>
                 <a className='just-centered' href=" mailto: conrad_zborowski@brown.edu">Conrad_Zborowski@brown.edu</a>
             </div>
@@ -65,4 +60,4 @@ const project3 = () => {
     );
 }
 
-export default project3;
+export default project4;
