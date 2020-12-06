@@ -137,7 +137,7 @@ function App() {
                                     <SocialIcon className='icon-so' url="https://facebook.com/conrad.zborowski" />
                                     <SocialIcon className='icon-so' url="https://linkedin.com/in/conrad-zborowski/" />
                                     <SocialIcon className='icon-so' url="https://github.com/czebos" />
-                                    <SocialIcon className='icon-so' url="https://instagram.com/conradzftw/i" />
+                                    <SocialIcon className='icon-so' url="https://instagram.com/conradzftw" />
 
                                 </div>
                                 <div className="contact-container">
